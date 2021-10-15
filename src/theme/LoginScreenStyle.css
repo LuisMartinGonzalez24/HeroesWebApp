@@ -1,0 +1,37 @@
+@layer components {
+    .main-container {
+        @apply min-h-screen pt-12 md:pt-20 pb-6;
+    }
+    
+    .header-login-form {
+        @apply max-w-lg mx-auto;
+    }
+
+    .header-login-form p {
+        @apply text-5xl font-bold text-blue-700 text-center;
+    }
+
+    .form-container{
+        @apply bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-xl shadow-2xl;
+    }
+
+    .title-login {
+        
+    }
+
+    .subtitle-login {
+        
+    }
+    
+    .login-form{
+        @apply bg-red-400;
+    }
+
+    .input-login {
+        @apply block;
+    }
+
+    .btn-login {
+        @apply bg-blue-500 text-white font-bold;
+    }
+}
