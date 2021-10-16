@@ -1,0 +1,37 @@
+@layer components {
+    .main-container {
+        @apply bg-white min-h-screen pt-12 md:pt-20 pb-6;
+    }
+    
+    .header-login-form {
+        @apply max-w-lg mx-auto;
+    }
+
+    .header-login-form p {
+        @apply text-5xl font-bold text-blue-600 text-center;
+    }
+
+    .form-container{
+        @apply bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-xl shadow-2xl;
+    }
+
+    .title-login {
+        @apply font-bold text-2xl text-blue-600;
+    }
+
+    .subtitle-login {
+        @apply text-gray-400 pt-2;
+    }
+    
+    .login-form{
+        @apply bg-red-400;
+    }
+
+    .input-login {
+        @apply rounded-lg border-transparent flex-1 appearance-none border border-gray-300 py-2 px-4 my-5 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent;
+    }
+
+    .btn-login {
+        @apply bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 rounded-lg shadow-lg hover:shadow-xl transition duration-300;
+    }
+}

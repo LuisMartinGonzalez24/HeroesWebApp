@@ -3,7 +3,7 @@ import { RouteComponentProps } from 'react-router';
 import queryString from 'query-string';
 import { useForm } from '../../hooks/useForm';
 import { getHeroesByName } from '../../selectors/getHeroesByName';
-import HeroCard from '../../components/heroes/HeroCard';
+import HeroCard from '../../components/HeroCard/HeroCard';
 
 interface SearchScreenProps extends RouteComponentProps { }
 

@@ -3,7 +3,6 @@ import { RouteComponentProps, Redirect } from 'react-router';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { getHeroById } from '../../selectors/getHeroById';
-import './heroCardStyles.css';
 
 AOS.init();
 

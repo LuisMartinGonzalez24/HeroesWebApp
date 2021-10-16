@@ -2,51 +2,27 @@ import React from 'react'
 
 export const TestScreen = () => (
 
-    <div className="bg-white rounded-lg shadow sm:max-w-md sm:w-full sm:mx-auto sm:overflow-hidden">
-        <div className="px-4 py-8 sm:px-10">
-            <div className="relative mt-6">
-                <div className="absolute inset-0 flex items-center">
-                    <div className="w-full border-t border-gray-300">
-                    </div>
-                </div>
-                <div className="relative flex justify-center text-sm leading-5">
-                    <span className="px-2 text-gray-500 bg-white">
-                        Search criteria
-                    </span>
+    <nav className="bg-gray-800 shadow dark:bg-gray-800">
+        <div className="px-6 py-3 flex">
+            <div className="flex items-center justify-between">
+                <div>
+                    <a className="text-2xl font-bold text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#">Companies</a>
                 </div>
             </div>
-            <div className="mt-6">
-                <div className="w-full space-y-6">
-                    <div className="w-full">
-                        <div className=" relative ">
-                            <input type="text" id="search-form-price" className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your price" />
-                        </div>
-                    </div>
-                    <div className="w-full">
-                        <div className=" relative ">
-                            <input type="text" id="search-form-location" className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your location" />
-                        </div>
-                    </div>
-                    <div className="w-full">
-                        <div className=" relative ">
-                            <input type="text" id="search-form-name" className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Your name" />
-                        </div>
-                    </div>
-                    <div>
-                        <span className="block w-full rounded-md shadow-sm">
-                            <button type="button" className="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                                Search
-                            </button>
-                        </span>
-                    </div>
+
+            {/** Mobile Menu open: "block", Menu closed: "hidden"*/}
+            <div className="w-full md:flex md:items-center md:justify-between">
+                <div className="flex flex-col px-2 py-3 -mx-4 md:flex-row md:mx-0 md:py-0">
+                    <a href="#" className="px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">Marvel</a>
+                    <a href="#" className="px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">DC</a>
+                    <a href="#" className="px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">Search</a>
+                </div>
+
+                <div className="relative">
+                    <input type="text" className="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" placeholder="Search" />
                 </div>
             </div>
         </div>
-        <div className="px-4 py-6 border-t-2 border-gray-200 bg-gray-50 sm:px-10">
-            <p className="text-xs leading-5 text-gray-500">
-                This data are display for information and can change
-            </p>
-        </div>
-    </div>
+    </nav>
 
 );

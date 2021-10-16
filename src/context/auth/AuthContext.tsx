@@ -25,7 +25,7 @@ const init = () => {
 //* Definition and what must export my context
 export interface AuthContextProps {
     authState: AuthState;
-    signIn: () => void;
+    signIn: (name: string) => void;
     logOut: () => void;
 };
 
@@ -41,9 +41,10 @@ export const AuthProvider = ({ children }: { children: JSX.Element | JSX.Element
         localStorage.setItem('user',JSON.stringify(authState));
     }, [authState])
 
-    const signIn = () => {
+    const signIn = (name: string) => {
         dispatch({
-            type: '[auth] login'
+            type: '[auth] login',
+            payload: name,
         })
     }
 

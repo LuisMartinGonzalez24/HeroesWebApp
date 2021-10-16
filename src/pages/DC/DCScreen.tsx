@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroList from '../../components/heroes/HeroList';
+import HeroList from '../../components/HeroList/HeroList';
 
 const DCScreen = () => {
     return (

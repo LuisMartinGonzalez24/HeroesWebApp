@@ -1,6 +1,6 @@
 import React from 'react';
 import { getHeroByPublisher } from '../../selectors/getHeroByPublisher';
-import HeroCard from './HeroCard';
+import HeroCard from '../HeroCard/HeroCard';
 
 interface HeroListProps {
     publisher: 'DC Comics' | 'Marvel Comics';
