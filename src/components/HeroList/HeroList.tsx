@@ -13,7 +13,7 @@ const HeroList = ({ publisher }: HeroListProps) => {
 
     return (
         <div
-            className='card-group'
+            className='grid grid-cols-4 gap-4 py-10 px-5'
             data-aos="zoom-in"
             data-aos-duration="500"
         >
