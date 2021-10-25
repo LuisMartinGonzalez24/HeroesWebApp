@@ -8,10 +8,10 @@ import SearchScreen from '../pages/SearchScreen/SearchScreen';
 
 const DashboardRoutes = () => {
     return (
-        <div>
+        <>
             <Navbar />
 
-            <div className='container'>
+            <div>
                 <Switch>
                     <Route exact path='/dc' component={DCScreen} />
                     <Route exact path='/marvel' component={MarvelScreen} />
@@ -20,7 +20,7 @@ const DashboardRoutes = () => {
                     <Redirect to='/marvel' />
                 </Switch>
             </div>
-        </div>
+        </>
     )
 }
 

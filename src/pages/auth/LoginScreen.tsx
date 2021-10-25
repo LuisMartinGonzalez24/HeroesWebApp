@@ -20,7 +20,7 @@ const LoginScreen = (props: LoginScreenProps) => {
     }
 
     return (
-        <div className='main-container'>
+        <div className='main-container' style={{backgroundColor: '#212121'}}>
             <header className='header-login-form'>
                 <p>Heroes Web App</p>
             </header>

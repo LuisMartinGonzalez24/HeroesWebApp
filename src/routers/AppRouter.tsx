@@ -12,7 +12,7 @@ const AppRouter = () => {
 
     return (
         <BrowserRouter>
-            <div>
+            <> 
                 <Switch>
                     <PublicRoute
                         exact
@@ -26,7 +26,7 @@ const AppRouter = () => {
                         isLogged={isLogged}
                     />
                 </Switch>
-            </div>
+            </>
         </BrowserRouter>
     )
 }
