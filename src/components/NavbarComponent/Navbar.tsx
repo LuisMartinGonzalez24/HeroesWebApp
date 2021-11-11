@@ -41,8 +41,8 @@ const Navbar = () => {
                         ))}
                     </div>
 
-                    <div className='flex items-center justify-between w-2/12'>
-                        <p className='text-white text-lg font-medium'>{authState.name}</p>
+                    <div className='flex items-center justify-between'>
+                        <p className='text-white text-lg font-medium mr-10'>{authState.name}</p>
                         <button
                             id='btn-login'
                             onClick={handleLogout}
